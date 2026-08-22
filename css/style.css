@@ -1,0 +1,288 @@
+/* Guia da Eletroquímica - estilo simples */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  background: #fdfdfb;
+  color: #222;
+  line-height: 1.6;
+}
+
+a { color: #1a5c3a; }
+a:hover { color: #0d3d26; }
+
+img { max-width: 100%; display: block; }
+
+/* topo com o nome da turma */
+.topo-info {
+  background: #1a5c3a;
+  color: #eef5ee;
+  font-size: 13px;
+  padding: 6px 16px;
+  text-align: center;
+}
+
+/* cabeçalho / título do site */
+header.cabecalho {
+  background: #f1efe3;
+  border-bottom: 3px solid #1a5c3a;
+  padding: 18px 16px;
+}
+header.cabecalho .titulo-site {
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+header.cabecalho h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #1a5c3a;
+}
+header.cabecalho .subtitulo {
+  font-size: 13px;
+  color: #555;
+}
+
+/* menu */
+nav.menu {
+  background: #eef5ee;
+  border-bottom: 1px solid #cddccb;
+}
+nav.menu ul {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 16px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+nav.menu li { margin: 0; }
+nav.menu a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #1a5c3a;
+  font-size: 14px;
+  border-bottom: 3px solid transparent;
+}
+nav.menu a:hover { background: #e0ece0; }
+nav.menu a.atual {
+  border-bottom: 3px solid #1a5c3a;
+  font-weight: bold;
+}
+
+main {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+h1 { color: #1a5c3a; }
+h2 {
+  color: #1a5c3a;
+  border-bottom: 2px solid #dcdcd2;
+  padding-bottom: 6px;
+  margin-top: 40px;
+}
+h3 { color: #2b2b2b; margin-bottom: 6px; }
+
+.pagina-intro {
+  background: #fbf9f0;
+  border: 1px solid #e6e2cf;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.imagem-capa {
+  margin: 16px 0 24px;
+  border: 1px solid #ccc;
+}
+.imagem-capa figcaption {
+  font-size: 12px;
+  color: #777;
+  padding: 6px 8px;
+  background: #f4f4f0;
+}
+
+/* caixas / cartões simples */
+.caixa {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+.caixa h3 { margin-top: 0; }
+
+.grade-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.grade-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 700px) {
+  .grade-2, .grade-3 { grid-template-columns: 1fr; }
+}
+
+/* etiquetas oxidação/redução */
+.et {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.et-ox { background: #e8f0fb; color: #1d4e89; border: 1px solid #b7cdec; }
+.et-red { background: #fbeee6; color: #9c4a1a; border: 1px solid #eec6ac; }
+
+/* glossário */
+.termo {
+  border-bottom: 1px solid #e2e2e2;
+  padding: 14px 0;
+}
+.termo dt {
+  font-weight: bold;
+  color: #1a5c3a;
+  font-size: 15px;
+}
+.termo dd {
+  margin: 6px 0 0;
+}
+.termo .exemplo {
+  font-size: 13px;
+  color: #555;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+/* tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+  font-size: 14px;
+}
+table caption { text-align: left; font-size: 13px; color: #666; margin-bottom: 6px; }
+th, td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: left;
+}
+th { background: #eef5ee; }
+
+/* questão ENEM */
+.questao {
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.questao-topo {
+  background: #eef5ee;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+}
+.questao-corpo { padding: 14px; }
+.alternativas { list-style: upper-alpha; padding-left: 22px; }
+.alternativas li { margin-bottom: 6px; }
+.alternativas li.certa { font-weight: bold; color: #1a5c3a; }
+
+/* perguntas e respostas (preparação) */
+.pergunta {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px dotted #ccc;
+}
+.pergunta p.p { font-weight: bold; margin: 0 0 4px; }
+.pergunta p.r { margin: 0; }
+
+/* espaço para foto/vídeo */
+.espaco-upload {
+  border: 2px dashed #b7b7a8;
+  background: #f7f6ef;
+  padding: 20px;
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+}
+.espaco-upload strong { display: block; color: #444; margin-bottom: 4px; }
+
+.grade-fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 600px) { .grade-fotos { grid-template-columns: 1fr; } }
+
+.grade-fotos-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 800px) { .grade-fotos-3 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .grade-fotos-3 { grid-template-columns: 1fr; } }
+
+.espaco-video {
+  border: 2px dashed #b7b7a8;
+  background: #f7f6ef;
+  padding: 40px 20px;
+  text-align: center;
+  color: #777;
+}
+
+/* preenchimento manual */
+.campo-preencher {
+  border: 1px solid #ccc;
+  background: #fcfcf8;
+  padding: 10px 12px;
+  min-height: 50px;
+  color: #888;
+  font-size: 14px;
+}
+.rotulo {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1a5c3a;
+  font-weight: bold;
+  margin: 14px 0 4px;
+}
+
+/* desafio final */
+.desafio {
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+.desafio .pergunta-cabecalho {
+  padding: 12px 14px;
+  background: #fff;
+}
+.desafio details { border-top: 1px solid #e2e2e2; }
+.desafio summary {
+  cursor: pointer;
+  padding: 8px 14px;
+  background: #eef5ee;
+  color: #1a5c3a;
+  font-size: 13px;
+}
+.desafio .resposta { padding: 10px 14px; background: #fbfbf6; }
+
+/* rodapé */
+footer {
+  background: #f1efe3;
+  border-top: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+footer a { color: #1a5c3a; }

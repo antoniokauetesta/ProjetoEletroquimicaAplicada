@@ -1,1 +1,0 @@
-# ProjetoEletroqu-micaAplicada
