@@ -42,18 +42,9 @@ estiver pronto, salve-o em images/video/ e adicione outro bloco de vídeo em
 html/registro.html (tem um exemplo comentado logo depois dos dois clipes,
 mostrando também a opção de usar um link do YouTube em vez de arquivo local).
 
-COMO TROCAR OU ADICIONAR MAIS FOTOS
---------------------------------------
-1. Copie a foto para images/fotos-pilha/
-2. Em html/registro.html, copie um bloco <figure class="imagem-capa">...</figure>
-   já existente e ajuste o src e o texto do figcaption.
-
 PERSONALIZAÇÃO
 ---------------
 - Nomes da equipe: aparecem em ".subtitulo" no topo de cada página (7 arquivos em html/)
 - Cores: no início de css/style.css
 
 ONDE HOSPEDAR (para gerar um link)
-------------------------------------
-Netlify Drop (netlify.com/drop): arraste a pasta inteira e ele gera um
-link público na hora.
