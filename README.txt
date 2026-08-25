@@ -46,5 +46,3 @@ PERSONALIZAÇÃO
 ---------------
 - Nomes da equipe: aparecem em ".subtitulo" no topo de cada página (7 arquivos em html/)
 - Cores: no início de css/style.css
-
-ONDE HOSPEDAR (para gerar um link)
